@@ -4,7 +4,7 @@
 
 A creative portfolio experience where visitors explore my journey through an interactive universe of six planets, showcasing my profile, education, projects, and achievements.
 
-🌐 **Live Demo:** https://abhiiii-369.github.io/VOYAGE/
+🌐 **Live Demo:** voyageof.abhinand.live
 
 ### 🛠️ Built With
 - HTML
