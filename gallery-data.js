@@ -13,7 +13,7 @@ window.GALLERY_DATA=[
   {src:"gallery/c6.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
   {src:"gallery/c7.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
   {src:"gallery/c8.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
-  {src:"gallery/c9.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
+  {src:"gallery/c9.jpg",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
 
 
 
