@@ -6,7 +6,14 @@ window.GALLERY_DATA=[
 {src:"gallery/udemy.png",title:"Complete 2024 Web Development Bootcamp",cat:"Certificates",note:"Udemy"},
 {src:"gallery/flutter.jpg",title:"Flutter Mobile App Development",cat:"Certificates",note:"Stem Robotics"},
 {src:"gallery/v1.png",title:"Volunteering",cat:"Volunteering",note:"Add your volunteering photo here"},
-{src:"",title:"Moments",cat:"Moments",note:"Add a favourite moment here"},
+{src:"gallery/c2.png",title:"Moments",cat:"Moments",note:"Add a favourite moment here"},
+  {src:"gallery/c3.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
+  {src:"gallery/c4.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
+  {src:"gallery/c5.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
+  {src:"gallery/c6.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
+  {src:"gallery/c7.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
+  {src:"gallery/c8.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
+  {src:"gallery/c9.png",title:"Certificate",cat:"Certificates",note:"Add a favourite moment here"},
 
 
 
