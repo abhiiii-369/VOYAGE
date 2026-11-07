@@ -93,6 +93,19 @@ p{margin:10px 0;color:#cfd8f5}
 .glc{max-width:min(900px,92vw);display:flex;justify-content:center}.glc img{max-width:100%;max-height:62vh;border-radius:14px;border:1px solid var(--ln)}
 .ph2{width:min(420px,86vw);aspect-ratio:4/3;border-radius:14px;border:1px solid var(--ln);place-content:center;gap:6px;text-align:center;background:radial-gradient(circle at 50% 30%,color-mix(in srgb,var(--c) 40%,#0a1030),#070a1c)}.ph2 span{font-size:56px}.ph2 i{font:400 12px var(--mono);color:var(--mut);font-style:normal}
 .glr{display:flex;align-items:center;gap:12px}.glr .btn{margin:0}
+#gsc{position:relative;flex:1;min-height:0;display:none;overflow:hidden;margin-top:10px;border-radius:14px;border:1px solid var(--ln);background:linear-gradient(rgba(124,196,255,.05) 1px,transparent 1px) 0 0/100% 28px,linear-gradient(90deg,rgba(124,196,255,.05) 1px,transparent 1px) 0 0/28px 100%,radial-gradient(ellipse at 50% 50%,rgba(20,34,80,.5),rgba(3,6,18,.7))}
+#gsc::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(transparent 0 2px,rgba(0,0,0,.18) 2px 3px)}
+.gtm{display:none;align-items:flex-end;justify-content:space-between;gap:12px;max-width:1100px;width:100%;margin:8px auto 0}
+#glog{flex:1;font:400 11px/1.5 var(--mono);color:#78e08a;white-space:pre;overflow:hidden;min-height:50px;min-width:0}.gtm .btn{margin:0;flex:0 0 auto}
+#gal.sc .gst,#gal.sc .gnav{display:none}#gal.sc #gsc{display:block}#gal.sc .gtm{display:flex}
+.gw{position:absolute;display:flex;flex-direction:column;border:1px solid var(--ac);border-radius:8px;background:rgba(4,8,24,.94);overflow:hidden;opacity:0;transform:scale(.6) rotate(var(--rot,0deg));cursor:grab;touch-action:none;user-select:none;box-shadow:0 0 22px color-mix(in srgb,var(--ac) 30%,transparent)}
+.gw.in{animation:gin .6s steps(9,end) forwards}.gw.drag{cursor:grabbing;box-shadow:0 0 38px var(--ac)}
+@keyframes gin{0%{opacity:0;transform:scale(.6) rotate(var(--rot,0deg));clip-path:inset(0 100% 0 0)}30%{opacity:1;clip-path:inset(0 0 0 0);filter:hue-rotate(70deg) brightness(1.7)}55%{transform:translateX(-5px) scale(1.04) rotate(var(--rot,0deg));filter:none}100%{opacity:1;transform:scale(1) rotate(var(--rot,0deg))}}
+.gwt{display:flex;align-items:center;gap:6px;padding:4px 8px;background:rgba(124,196,255,.14);font:500 10px var(--mono);color:var(--ac);letter-spacing:.05em;flex:0 0 auto}
+.gwt i{width:6px;height:6px;border-radius:50%;background:#ff5f56;box-shadow:12px 0 #ffbd2e,24px 0 #27c93f;margin-right:26px;flex:0 0 auto}.gwt span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.gwt em{font-style:normal;color:#78e08a}
+.gw .gi{flex:1 1 auto;min-height:0}.gws{flex:0 0 auto;padding:4px 8px;font:500 10px var(--mono);color:#cfd8f5;background:rgba(5,8,26,.95);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gscan{position:absolute;left:0;right:0;top:-35%;height:30%;background:linear-gradient(transparent,rgba(124,196,255,.3),transparent);pointer-events:none}.gw.in .gscan{animation:scn .9s .1s linear 1}@keyframes scn{to{top:115%}}
+@media (prefers-reduced-motion:reduce){.gw{opacity:1;transform:rotate(var(--rot,0deg))}}
 @media (max-width:980px){.top .nav .btn.ai,.top .nav .btn.p{padding:8px 13px}.pill{display:none;position:absolute;top:calc(100% + 8px);right:0;flex-direction:column;align-items:stretch;border-radius:16px;padding:6px;min-width:176px}.pill.open{display:flex}.pill .btn{text-align:left;padding:11px 14px}#bm{display:inline-block}}
 .dock{display:flex;flex-direction:column;overflow:hidden;max-height:min(50vh,460px)}
 .dock .bd{overflow-y:auto;min-height:0;flex:1 1 auto;padding-right:2px;-webkit-overflow-scrolling:touch}
@@ -117,7 +130,7 @@ p{margin:10px 0;color:#cfd8f5}
 <div class="intro ui" id="intro"><div class="lb">// HELLO, WORLD</div><h1>I’m Abhinand A S</h1><div class="sub">SOFTWARE DEVELOPER</div><p>Six planets, six projects, one mission. Your spaceship is parked at the launch pad. Ready to explore?</p><div class="row"><button class="btn p" onclick="launch()">Start Journey 🚀</button></div><div class="sub ih">🎧 BEST WITH SOUND ON</div></div>
 <div class="dock ui" id="dock"></div>
 <div id="cd"></div><div id="toast" class="ui"></div><div id="fh" class="ui"></div><div id="sc2"></div><div id="pp"></div><div id="fx"></div><div id="ar"></div><button class="btn p ui" id="bst">BOOST</button>
-<div id="gal" class="ui"><div class="gh"><div><div class="lb">// MISSION ARCHIVE</div><h2>Gallery</h2></div><button class="btn ic" id="gx" aria-label="Close gallery">✕</button></div><div class="gf" id="gf"></div><div class="gst" id="gst"><div class="gring" id="gring"></div></div><div class="gnav"><button class="btn ic" id="gp" aria-label="Previous">◀</button><div class="gcap" id="gcap"></div><button class="btn ic" id="gnx" aria-label="Next">▶</button></div><div id="glb"></div></div>
+<div id="gal" class="ui"><div class="gh"><div><div class="lb">// MISSION ARCHIVE</div><h2>Gallery</h2></div><button class="btn ic" id="gx" aria-label="Close gallery">✕</button></div><div class="gf" id="gf"></div><div class="gst" id="gst"><div class="gring" id="gring"></div></div><div id="gsc"></div><div class="gtm" id="gtm"><div id="glog"></div><button class="btn" id="grs">↻ Re-scan</button></div><div class="gnav"><button class="btn ic" id="gp" aria-label="Previous">◀</button><div class="gcap" id="gcap"></div><button class="btn ic" id="gnx" aria-label="Next">▶</button></div><div id="glb"></div></div>
 <div id="ld"><div><div class="lb">// INITIALIZING FLIGHT SYSTEMS</div><div class="ldb"><i></i></div></div></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
@@ -231,10 +244,10 @@ if(mode==="fly"){fl.u+=1/60/fl.d;const u=Math.min(1,fl.u),e=u<.5?4*u*u*u:1-Math.
 bank+=((Math.max(-.7,Math.min(.7,fl.pt.clone().cross(tg2).y*70)))-bank)*.08;ship.rotateZ(bank);fl.pt.copy(tg2);fl.tg.lerp(tg2,.2);if(u>=1)arrive()}
 else if(mode==="free"){const dt=1/60,k=keys,ps=ship.position;ff.pd.copy(ff.d);
 if(!over){nd.set(mx/W*2-1,-(my/H)*2+1);ray.setFromCamera(nd,cam);v3.copy(ray.ray.origin).addScaledVector(ray.ray.direction,90).sub(ps).normalize()}else v3.copy(ff.d);
-{const r=rings[run.ri];if(r){const dv=r.p.clone().sub(ps),dist=dv.length();if(dist<38&&ps.z>r.p.z){dv.normalize();if(dv.dot(v3)>.55)v3.lerp(dv,.35*(1-dist/38)+.1).normalize()}}}
+{const r=rings[run.ri];if(r){const dv=r.p.clone().sub(ps),dist=dv.length();if(dist<22&&ps.z>r.p.z){dv.normalize();if(dv.dot(v3)>.55)v3.lerp(dv,.2*(1-dist/22)+.04).normalize()}}}
 if(Math.abs(ps.x)>82||Math.abs(ps.y)>46||ps.z<-168||ps.z>52)v3.set(-ps.x,-ps.y,-95-ps.z).normalize();
-ff.d.lerp(v3,1-Math.exp(-3.2*dt)).normalize();
-let tv=15+((k.w||k.ArrowUp||mdown)?22:0)+(k.Shift?34:0)-((k.s||k.ArrowDown)?9:0)+ff.kick;tv=Math.max(4,tv);ff.kick*=.96;ff.v+=(tv-ff.v)*.05;
+ff.d.lerp(v3,1-Math.exp(-3.8*dt)).normalize();
+let tv=17+((k.w||k.ArrowUp||mdown)?22:0)+(k.Shift?34:0)-((k.s||k.ArrowDown)?9:0)+ff.kick;tv=Math.max(4,tv);ff.kick*=.96;ff.v+=(tv-ff.v)*.05;
 ps.addScaledVector(ff.d,ff.v*dt);ps.x=Math.max(-90,Math.min(90,ps.x));ps.y=Math.max(-52,Math.min(52,ps.y));ps.z=Math.max(-175,Math.min(60,ps.z));
 P.forEach(q=>{const dv=ps.clone().sub(q.v),dd=dv.length(),rr=q.r*(q.st?1.9:1.18)+1.2;if(dd<rr)ps.copy(q.v).add(dv.setLength(rr))});
 ship.lookAt(ps.clone().add(ff.d));bank+=(Math.max(-.8,Math.min(.8,ff.pd.clone().cross(ff.d).y*110))-bank)*.1;ship.rotateZ(bank);sp=ff.v*dt;runStep(ps)}
@@ -314,7 +327,7 @@ const KB=[
 {k:["isro","internship","goal","future","dream","aspir","career"],a:"His goal is an internship at ISRO, contributing to research and space technology initiatives, especially around space-data visualization and machine learning for scientific applications."},
 {k:["interest","research","passion","focus"],a:"He’s drawn to space-data visualization, software engineering, and machine learning for scientific applications."},
 {k:["where","location","kerala","india","city"],a:"He studies at College of Engineering Attingal in Kerala, India."},
-{k:["free flight","easter egg","secret","hidden","ring run","score"],a:"Press 🕹 Free Flight at the top for the Ring Run: point your mouse where you want to go, fly through the gold rings, grab energy orbs and hunt three hidden signals. Your score earns a rank from Cadet to Commander!"},
+{k:["free flight","easter egg","secret","hidden","ring run","score"],a:"Press 🕹 Free Flight at the top for the Ring Run: point your mouse where you want to go, race the clock through the gold rings, dodge red mines, grab orbs for extra seconds and hunt three hidden signals. Your score earns a rank from Cadet to Commander!"},
 {k:["gallery","photo","picture","certificate photo","volunteer"],a:"Open Gallery from the top bar to browse photos of his achievements, certificates and volunteering in a 3D ring."},
 {k:["who is","who’s","introduce","tell me about","yourself","bio","summary","about him","about abhinand"],a:"Abhinand A S is a software developer and Computer Science undergraduate who loves space-data visualization and machine learning. He builds scientific apps on real NASA datasets and is aiming for an ISRO internship."},
 {k:["this site","this website","how did you make","how was this","made this","built this","website","music","sound"],a:"This portfolio is a 3D space voyage built with Three.js: the planets are procedural GLSL shaders, there’s bloom and warp-speed streaks, and the ambient soundtrack is generated live in your browser. Use the Music button to mute it."}];
@@ -344,29 +357,34 @@ function ping(f,d){if(!AC||mute)return;const t=AC.currentTime,o=AC.createOscilla
 function popup(txt,bad){const e=document.getElementById("pp");e.textContent=txt;e.className="";void e.offsetWidth;e.className="go"+(bad?" bad":"")}
 function fx(){const e=document.getElementById("fx");e.classList.remove("on");void e.offsetWidth;e.classList.add("on")}
 function burst(p,c,n){const g=new T.BufferGeometry(),a=new Float32Array(n*3),v=[];for(let i=0;i<n;i++){a[i*3]=p.x;a[i*3+1]=p.y;a[i*3+2]=p.z;v.push(new T.Vector3(Math.random()-.5,Math.random()-.5,Math.random()-.5).normalize().multiplyScalar(4+Math.random()*10))}g.setAttribute("position",new T.BufferAttribute(a,3));const pt=new T.Points(g,new T.PointsMaterial({size:.6,color:c,transparent:true,opacity:1,depthWrite:false,blending:T.AdditiveBlending}));pt.frustumCulled=false;sc.add(pt);bursts.push({pt,v,a,l:1})}
+const mines=[];
 function buildRun(){runG=new T.Group();runG.visible=false;sc.add(runG);
-[[-3,1.5,-2],[1,.5,-21],[0,1,-35.5],[.5,.5,-50.5],[1,0,-65.5],[0,1.5,-81],[-2,4,-94],[0,7,-98.5]].forEach(a=>{const m=new T.Mesh(new T.TorusGeometry(5.2,.18,12,64),new T.MeshBasicMaterial({color:0x4aa8ff,transparent:true,opacity:.4,depthWrite:false}));m.position.set(...a);runG.add(m);rings.push({m,p:m.position,rad:5.2,got:0})});
+[[-5.5,2,-4],[5.5,0,-21],[-5.5,3,-35.5],[5.5,0,-50.5],[-5.5,2,-65.5],[5.5,1,-81],[-3,4,-94],[0,7,-98.5]].forEach(a=>{const m=new T.Mesh(new T.TorusGeometry(3.6,.16,12,64),new T.MeshBasicMaterial({color:0x4aa8ff,transparent:true,opacity:.4,depthWrite:false}));m.position.set(...a);runG.add(m);rings.push({m,p:m.position,rad:3.6,got:0})});
 [[-6,3,-10],[-3,-2,-16],[4,2,-24],[6,-3,-30],[-4,3,-34],[-6,0,-40],[3,-1,-46],[6,3,-52],[-2,2,-58],[-5,-2,-66],[2,3,-70],[5,0,-78],[-3,1,-86],[2,5,-94]].forEach(a=>{const m=new T.Mesh(new T.SphereGeometry(.45,12,10),new T.MeshBasicMaterial({color:0xffd24a}));m.position.set(...a);runG.add(m);orbs.push({m,y:a[1],got:0})});
+[[0,5,-12.5],[0,-2.2,-28],[0,5,-43],[0,-2.2,-58],[0,5,-73],[1,-2,-88],[5.5,-1.5,-30],[-5,1.5,-52],[5,3,-70]].forEach(a=>{const g=new T.Group();g.add(new T.Mesh(new T.IcosahedronGeometry(1,0),new T.MeshBasicMaterial({color:0xff3b3b,wireframe:true})));g.add(new T.Mesh(new T.SphereGeometry(.45,10,8),new T.MeshBasicMaterial({color:0xff2222})));g.position.set(...a);runG.add(g);mines.push({m:g,got:0})});
 secs.forEach(s=>s.r=8)}
-function resetRun(){run.ri=0;run.score=0;run.combo=0;run.orbs=0;run.t0=Date.now();run.last=run.t0;ff.kick=0;found=0;rings.forEach(r=>{r.got=0;r.pz=undefined;r.m.visible=true;r.m.material.opacity=.4;r.m.scale.setScalar(1)});orbs.forEach(o=>{o.got=0;o.m.visible=true});secs.forEach(s=>{s.got=0;s.o.visible=true})}
-function passRing(r,dd){r.got=1;run.ri++;const n=Date.now();if(n-run.last>9000)run.combo=0;run.last=n;run.combo=Math.min(5,run.combo+1);const perfect=dd<2.2,pts=100*run.combo+(perfect?50:0);run.score+=pts;ff.kick+=16;burst(r.p,perfect?0xffd24a:0x7cc4ff,50);ping(520+run.combo*110,.35);popup((perfect?"PERFECT +":"+")+pts+(run.combo>1?"  ×"+run.combo:""));if(run.ri>=rings.length)finishRun()}
-function runStep(ps){if(run.ri<rings.length){const r=rings[run.ri];if(r.pz!==undefined&&r.pz>=r.p.z&&ps.z<r.p.z){const dd=Math.hypot(ps.x-r.p.x,ps.y-r.p.y);if(dd<r.rad+1.2)passRing(r,dd);else popup("MISSED · circle back",1)}r.pz=ps.z}
-orbs.forEach(o=>{if(!o.got&&ps.distanceTo(o.m.position)<3.2){o.got=1;o.m.visible=false;run.orbs++;run.score+=25;burst(o.m.position,0xffd24a,16);ping(1500,.12)}});
-const s=(Date.now()-run.t0)/1000|0;hs.textContent=`RING ${Math.min(run.ri+1,rings.length)}/${rings.length}  ·  ×${Math.max(1,run.combo)}\nSCORE ${run.score}  ·  ${s/60|0}:${String(s%60).padStart(2,"0")}\nORBS ${run.orbs}/${orbs.length}  ·  SECRETS ${found}/3`}
-function finishRun(){const tm=(Date.now()-run.t0)/1000|0,pts=run.score;let best=0;try{best=+localStorage.getItem("av_best")||0;if(pts>best){localStorage.setItem("av_best",pts);best=pts}}catch(e){best=Math.max(best,pts)}
-const rk=pts>=3300?"COMMANDER":pts>=2000?"PILOT":"CADET",msg={COMMANDER:"Flawless flying, commander. You’ve earned a conversation with the pilot behind this site.",PILOT:"Smooth run, pilot! Fly again for the commander rank, or say hello.",CADET:"Mission complete, cadet! Fly again to beat your score."}[rk];
-const html=`<div class="bd"><div class="lb">// MISSION COMPLETE · RING RUN</div><h2>${rk}</h2><div class="sub">BEST SCORE ${best}</div><div class="gs"><div><b>${pts}</b><span>score</span></div><div><b>${tm/60|0}:${String(tm%60).padStart(2,"0")}</b><span>time</span></div><div><b>${run.orbs}/${orbs.length}</b><span>orbs</span></div><div><b>${found}/3</b><span>secrets</span></div></div><p>${msg}</p></div><div class="ft"><button class="btn nv" onclick="enterFree()">↺ Fly again</button><div class="mid"></div><button class="btn p nv nx" onclick="travel(7)">Say hello ▶</button></div>`;
-setTimeout(()=>{exitFree();chime();fx();dock.innerHTML=html;dock.classList.add("show")},1000)}
+function resetRun(){run.ri=0;run.score=0;run.combo=0;run.orbs=0;run.left=12;run.over=0;run.t0=Date.now();run.last=run.t0;ff.kick=0;found=0;rings.forEach(r=>{r.got=0;r.pz=undefined;r.m.visible=true;r.m.material.opacity=.4;r.m.scale.setScalar(1)});orbs.forEach(o=>{o.got=0;o.m.visible=true});mines.forEach(m=>{m.got=0;m.m.visible=true});secs.forEach(s=>{s.got=0;s.o.visible=true})}
+function passRing(r,dd){r.got=1;run.ri++;const n=Date.now();if(n-run.last>6000)run.combo=0;run.last=n;run.combo=Math.min(5,run.combo+1);run.left+=3.5;const perfect=dd<1.4,pts=100*run.combo+(perfect?50:0);run.score+=pts;ff.kick+=16;burst(r.p,perfect?0xffd24a:0x7cc4ff,50);ping(520+run.combo*110,.35);popup((perfect?"PERFECT +":"+")+pts+(run.combo>1?"  ×"+run.combo:"")+"  +3.5s");if(run.ri>=rings.length)endRun(1)}
+function runStep(ps){if(run.over)return;run.left-=1/60;if(run.left<=0){run.left=0;endRun(0);return}
+if(run.ri<rings.length){const r=rings[run.ri];if(r.pz!==undefined&&r.pz>=r.p.z&&ps.z<r.p.z){const dd=Math.hypot(ps.x-r.p.x,ps.y-r.p.y);if(dd<r.rad+.5)passRing(r,dd);else popup("MISSED · circle back",1)}r.pz=ps.z}
+orbs.forEach(o=>{if(!o.got&&ps.distanceTo(o.m.position)<2.8){o.got=1;o.m.visible=false;run.orbs++;run.score+=25;run.left+=.8;burst(o.m.position,0xffd24a,16);ping(1500,.12)}});
+mines.forEach(m=>{if(!m.got&&ps.distanceTo(m.m.position)<2.6){m.got=1;m.m.visible=false;run.left=Math.max(0,run.left-3);run.combo=0;burst(m.m.position,0xff4444,40);shk=.45;ping(170,.35);popup("MINE  −3s",1)}});
+hs.textContent=`RING ${Math.min(run.ri+1,rings.length)}/${rings.length}  ·  ×${Math.max(1,run.combo)}\nSCORE ${run.score}  ·  TIME ${Math.max(0,run.left).toFixed(1)}s\nORBS ${run.orbs}/${orbs.length}  ·  SECRETS ${found}/3`}
+function endRun(win){run.over=1;const tm=(Date.now()-run.t0)/1000|0,bonus=win?Math.round(Math.max(0,run.left)*10):0;run.score+=bonus;const pts=run.score;let best=0;try{best=+localStorage.getItem("av_best")||0;if(pts>best){localStorage.setItem("av_best",pts);best=pts}}catch(e){best=Math.max(best,pts)}
+const rk=win?(pts>=3600?"COMMANDER":pts>=2300?"PILOT":"CADET"):"SIGNAL LOST",msg=win?{COMMANDER:"Flawless flying, commander. You’ve earned a conversation with the pilot behind this site.",PILOT:"Smooth run, pilot! Fly again for the commander rank, or say hello.",CADET:"Mission complete, cadet! Fly again to beat your score."}[rk]:"Out of time after "+run.ri+" of "+rings.length+" rings. Dodge the red mines, grab orbs for extra seconds, and try again!";
+const html=`<div class="bd"><div class="lb">// ${win?"MISSION COMPLETE":"OUT OF TIME"} · RING RUN</div><h2>${rk}</h2><div class="sub">BEST SCORE ${best}${win?" · TIME BONUS +"+bonus:""}</div><div class="gs"><div><b>${pts}</b><span>score</span></div><div><b>${run.ri}/${rings.length}</b><span>rings</span></div><div><b>${run.orbs}/${orbs.length}</b><span>orbs</span></div><div><b>${found}/3</b><span>secrets</span></div></div><p>${msg}</p></div><div class="ft"><button class="btn nv" onclick="enterFree()">↺ Fly again</button><div class="mid"></div><button class="btn p nv nx" onclick="travel(7)">Say hello ▶</button></div>`;
+setTimeout(()=>{exitFree();win?chime():ping(160,.5);fx();dock.innerHTML=html;dock.classList.add("show")},1000)}
 function runAnim(t){if(runG)runG.visible=mode==="free";
 for(let i=bursts.length-1;i>=0;i--){const b=bursts[i];b.l-=.02;for(let j=0;j<b.v.length;j++){b.a[j*3]+=b.v[j].x*.016;b.a[j*3+1]+=b.v[j].y*.016;b.a[j*3+2]+=b.v[j].z*.016}b.pt.geometry.attributes.position.needsUpdate=true;b.pt.material.opacity=Math.max(0,b.l);if(b.l<=0){sc.remove(b.pt);b.pt.geometry.dispose();bursts.splice(i,1)}}
 if(mode!=="free")return;
 rings.forEach((r,i)=>{const m=r.m,isN=i===run.ri;if(r.got){m.material.opacity=Math.max(0,m.material.opacity-.02);m.scale.setScalar(m.scale.x*1.015);m.material.color.set(0x55ff99);m.visible=m.material.opacity>.02}else{m.material.color.set(isN?0xffd24a:0x4aa8ff);m.material.opacity=isN?.95:.4;m.scale.setScalar(isN?1+.07*Math.sin(t*7):1)}});
 orbs.forEach((o,i)=>{if(!o.got)o.m.position.y=o.y+Math.sin(t*2+i)*.4});
+mines.forEach((m,i)=>{if(!m.got){m.m.rotation.y=t*1.4+i;m.m.rotation.x=t*.9;m.m.scale.setScalar(1+.12*Math.sin(t*5+i))}});if(shk>0){shk*=.88;if(shk<.01)shk=0}
 const ar=document.getElementById("ar"),tgt=rings[run.ri];if(!tgt){ar.style.display="none";return}
 v3.copy(tgt.p).project(cam);let x=v3.x,y=v3.y;const behind=v3.z>1;if(behind){x=-x;y=-y}const off=behind||Math.abs(x)>.88||Math.abs(y)>.8;if(off){const k=Math.max(Math.abs(x)/.88,Math.abs(y)/.8)||1;x/=k;y/=k}
 ar.style.display="block";ar.style.transform=`translate(${(x*.5+.5)*W}px,${(-y*.5+.5)*H}px) translate(-50%,-50%) rotate(${off?Math.atan2(-y,x):0}rad)`;ar.textContent=off?"➤":"◎ "+(ship.position.distanceTo(tgt.p)|0)+"m"}
 function setFree(on){document.getElementById("fh").classList.toggle("on",on);hs.classList.toggle("on",on);document.getElementById("bf").textContent=on?"✕ Exit Flight":"🕹 Free Flight";document.getElementById("bst").style.display=on&&!fine?"block":"none";if(!on)document.getElementById("ar").style.display="none";document.getElementById("fh").textContent=fine?"MOUSE steers · hold CLICK or W to boost · SHIFT hyperdrive · ESC exit":"DRAG to steer · hold BOOST · tap Exit Flight to leave"}
-function enterFree(){if(mode==="fly"||launching)return;started=1;curEl.classList.add("ret");dock.classList.remove("show");intro.classList.add("hide");chat.classList.remove("open");audioStart();fx();resetRun();ship.position.set(-4,2,12);ff.d.set(0,0,-1);ff.pd.copy(ff.d);ff.v=14;bank=0;cam.position.set(-4,5.2,22);look.set(-4,2,-2);mode="free";setFree(1);toast("<b>RING RUN</b>Point your mouse where you want to go and fly through the big gold rings, and the ship helps you line up. Grab the orbs and hunt the 3 hidden signals for bonus points.",6500)}
+function enterFree(){if(mode==="fly"||launching)return;started=1;curEl.classList.add("ret");dock.classList.remove("show");intro.classList.add("hide");chat.classList.remove("open");audioStart();fx();resetRun();ship.position.set(-4,2,12);ff.d.set(0,0,-1);ff.pd.copy(ff.d);ff.v=14;bank=0;cam.position.set(-4,5.2,22);look.set(-4,2,-2);mode="free";setFree(1);toast("<b>RING RUN</b>Beat the clock! Fly through every ring, weave around the red mines and grab orbs for extra seconds. Hunt the 3 hidden signals for bonus points.",6500)}
 function exitFree(){if(mode!=="free")return;mode="ov";setFree(0)}
 function collect(s){if(s.got)return;s.got=1;s.o.visible=false;found++;run.score+=300;burst(s.o.position,0xffe08a,90);fx();chime();popup("★ "+s.h.replace(/^\S+\s/,"")+" +300");toast(`<b>${s.h} · ${found}/3</b>${s.m}`,7500)}
 addEventListener("mousedown",e=>{if(!e.target.closest(".ui"))mdown=1});addEventListener("mouseup",()=>{mdown=0});
@@ -421,20 +439,42 @@ c.onclick=()=>{if(gdr){gdr=0;return}if(gActive()===i)gLight(i);else{let d=((i-gA
 function gRot(){gring.style.transform=`translateZ(${-gR}px) rotateY(${-gr*gstep}deg)`;const a=gActive();
 gcards.forEach((c,i)=>{const d=Math.min((i-a+gn_)%gn_,(a-i+gn_)%gn_);c.style.opacity=d===0?1:d===1?.55:.22;c.style.filter=d===0?"none":"brightness(.65)";c.classList.toggle("on",d===0)});
 const g=gl[a];document.getElementById("gcap").innerHTML=g?`<b>${esc(g.title)}</b><span>${esc(g.cat)}${g.note?" · "+esc(g.note):""} · tap the front card to enlarge</span>`:""}
-function gFilters(){const f=document.getElementById("gf");f.innerHTML="";["All",...new Set(GALLERY.map(g=>g.cat))].forEach(c=>{const b=document.createElement("button");b.textContent=c;b.className=c===gcat?"on":"";b.onclick=()=>{gcat=c;gFilters();gBuild();gRot()};f.appendChild(b)})}
+function gFilters(){const f=document.getElementById("gf");f.innerHTML="";["All",...new Set(GALLERY.map(g=>g.cat))].forEach(c=>{const b=document.createElement("button");b.textContent=c;b.className=c===gcat?"on":"";b.onclick=()=>{gcat=c;gFilters();if(c==="All"){gal.classList.remove("sc");gClear();gBuild();gRot()}else{gal.classList.add("sc");gScatter()}};f.appendChild(b)})}
 function gStep(d){if(!gn_)return;gr+=d;gRot()}
 function gLight(i){glbI=i;const g=gl[i],k=gcol(g);
 glb.innerHTML=`<div class="glc">${g.src?`<img src="${esc(g.src)}" alt="${esc(g.title)}" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">`:""}<div class="ph2" style="--c:${k[0]};display:${g.src?"none":"grid"}"><span>${k[1]}</span><i>Add your photo</i></div></div><div class="gcap"><b>${esc(g.title)}</b><span>${esc(g.cat)}${g.note?" · "+esc(g.note):""}</span></div><div class="glr"><button class="btn ic" id="glp" aria-label="Previous">◀</button><button class="btn" id="glx">Close</button><button class="btn ic" id="gln" aria-label="Next">▶</button></div>`;
 glb.classList.add("open");const mv=d=>{gStep(d);gLight(((glbI+d)%gn_+gn_)%gn_)};
 document.getElementById("glp").onclick=e=>{e.stopPropagation();mv(-1)};document.getElementById("gln").onclick=e=>{e.stopPropagation();mv(1)};document.getElementById("glx").onclick=e=>{e.stopPropagation();glb.classList.remove("open")}}
-function openGal(){if(mode==="free")exitFree();chat.classList.remove("open");gal.classList.add("open");gcat="All";gFilters();gBuild();gRot();audioStart();ping(660,.2);clearInterval(gtimer);if(!rm)gtimer=setInterval(()=>{if(!glb.classList.contains("open")&&!ghover){gr++;gRot()}},4800)}
-function closeGal(){gal.classList.remove("open");glb.classList.remove("open");clearInterval(gtimer)}
+function openGal(){if(mode==="free")exitFree();chat.classList.remove("open");gal.classList.add("open");gcat="All";gal.classList.remove("sc");gClear();gFilters();gBuild();gRot();audioStart();ping(660,.2);clearInterval(gtimer);if(!rm)gtimer=setInterval(()=>{if(!glb.classList.contains("open")&&!ghover&&!gal.classList.contains("sc")){gr++;gRot()}},4800)}
+function closeGal(){gal.classList.remove("open");glb.classList.remove("open");clearInterval(gtimer);gClear()}
 document.getElementById("bg").onclick=openGal;document.getElementById("gx").onclick=closeGal;document.getElementById("gp").onclick=()=>gStep(-1);document.getElementById("gnx").onclick=()=>gStep(1);
 glb.addEventListener("click",e=>{if(e.target===glb)glb.classList.remove("open")});
 gst.addEventListener("pointerdown",e=>{gx0=e.clientX});
 gst.addEventListener("pointerup",e=>{if(gx0==null)return;const dx=e.clientX-gx0;gx0=null;if(dx>45){gdr=1;gStep(-1)}else if(dx<-45){gdr=1;gStep(1)}});
 gst.addEventListener("pointerenter",()=>{ghover=1});gst.addEventListener("pointerleave",()=>{ghover=0;gx0=null});
 addEventListener("keydown",e=>{if(!gal.classList.contains("open"))return;if(e.key==="Escape"){glb.classList.contains("open")?glb.classList.remove("open"):closeGal()}else if(e.key==="ArrowRight")gStep(1);else if(e.key==="ArrowLeft")gStep(-1)});
+let gsT=[],glines=[],gz=10,grz=null;
+function gClear(){gsT.forEach(clearTimeout);gsT=[]}
+function gLog(t){glines.push(t);if(glines.length>4)glines.shift();document.getElementById("glog").textContent=glines.join("\n")}
+function gWin(g,i){const w=document.createElement("div");w.className="gw";const k=gcol(g);
+const ph=`<div class="ph" style="--c:${k[0]}"><span>${k[1]}</span><i>Add your photo</i></div>`,fn=esc((g.src||"no_signal").split("/").pop());
+w.innerHTML=`<div class="gwt"><i></i><span>${fn}</span><em>RX</em></div><div class="gi">${g.src?`<div class="bgb" style="background-image:url('${encodeURI(g.src)}')"></div><img alt="${esc(g.title)}" src="${esc(g.src)}" draggable="false">`:ph}</div><div class="gws">${esc(g.title)}</div><div class="gscan"></div>`;
+const im=w.querySelector("img");if(im)im.onerror=()=>{const gi=w.querySelector(".gi");if(gi)gi.innerHTML=ph};
+let sx=null,sy=0,ox=0,oy=0,mv=0;
+w.addEventListener("pointerdown",e=>{sx=e.clientX;sy=e.clientY;ox=w.offsetLeft;oy=w.offsetTop;mv=0;w.style.zIndex=++gz;w.classList.add("drag");try{w.setPointerCapture(e.pointerId)}catch(x){}});
+w.addEventListener("pointermove",e=>{if(sx==null)return;const dx=e.clientX-sx,dy=e.clientY-sy;if(Math.abs(dx)+Math.abs(dy)>6)mv=1;if(mv){w.style.left=ox+dx+"px";w.style.top=oy+dy+"px"}});
+w.addEventListener("pointerup",()=>{w.classList.remove("drag");if(sx!=null&&!mv)gLight(i);sx=null});
+w.addEventListener("pointercancel",()=>{sx=null;w.classList.remove("drag")});return w}
+function gScatter(){gClear();glines=[];const box=document.getElementById("gsc");box.innerHTML="";gl=GALLERY.filter(g=>g.cat===gcat);gn_=gl.length;gcards=[];
+const r=box.getBoundingClientRect(),SW=r.width||600,SH=r.height||360,mob=SW<700,placed=[];gLog("> establishing secure link…");
+if(!gn_){gLog("> no transmissions in this sector yet");return}
+gsT.push(setTimeout(()=>gLog("> decrypting "+gcat.toLowerCase()+"…"),350));
+gl.forEach((g,i)=>{const hero=i===0,w=hero?(mob?210:310):(mob?118:176)*(.85+Math.random()*.4),h=w*.75+44;let x,y,t=0;
+if(hero){x=(SW-w)/2;y=Math.max(4,(SH-h)/2)}else{do{x=4+Math.random()*Math.max(1,SW-w-8);y=4+Math.random()*Math.max(1,SH-h-8);t++}while(t<50&&placed.some(p=>x<p.x+p.w-6&&x+w>p.x+6&&y<p.y+p.h-6&&y+h>p.y+6))}
+placed.push({x,y,w,h});const c=gWin(g,i);c.style.left=x+"px";c.style.top=y+"px";c.style.width=w+"px";c.style.height=h+"px";c.style.setProperty("--rot",(hero?0:(Math.random()-.5)*8)+"deg");box.appendChild(c);
+gsT.push(setTimeout(()=>{c.classList.add("in");gLog("> received ["+(i+1)+"/"+gn_+"] "+(g.src||"no_signal").split("/").pop());if(i===gn_-1)gsT.push(setTimeout(()=>gLog("> transfer complete · drag to move · tap to open"),500))},i===0?700:900+i*320))})}
+document.getElementById("grs").onclick=()=>{if(gal.classList.contains("sc"))gScatter()};
+addEventListener("resize",()=>{if(gal.classList.contains("open")&&gal.classList.contains("sc")){clearTimeout(grz);grz=setTimeout(gScatter,350)}});
 if(window.THREE){try{init();requestAnimationFrame(frame)}catch(e){fail(e.message)}}
 </script>
 </body>
