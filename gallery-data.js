@@ -7,5 +7,5 @@ window.GALLERY_DATA=[
 {src:"gallery/udemy.png",title:"Complete 2024 Web Development Bootcamp",cat:"Certificates",note:"Udemy"},
 {src:"gallery/flutter.jpg",title:"Flutter Mobile App Development",cat:"Certificates",note:"Stem Robotics"},
 {src:"gallery/v1.png",title:"Volunteering",cat:"Volunteering",note:"Add your volunteering photo here"},
-{src:"",title:"Moments",cat:"Moments",note:"Add a favourite moment here"}
+{src:"gallery/m1.png",title:"Moments",cat:"Moments",note:"Add a favourite moment here"}
 ];
