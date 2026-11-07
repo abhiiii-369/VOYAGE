@@ -27,6 +27,7 @@ window.GALLERY_DATA=[
       {src:"gallery/m2.jpg",title:"Tech Team",cat:"Volunteering",note:"Execom Member"},
      {src:"gallery/Abhinand A S.jpg",title:"Project Expo",cat:"Certificates",note:"Third Prize"},
     {src:"gallery/v3.JPG",title:"ENIGMA",cat:"Volunteering",note:"Core Team"},
+   {src:"gallery/m11.png",title:"ARCANE",cat:"Moments",note:"TEAM"},
 
 
 
