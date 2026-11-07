@@ -16,6 +16,15 @@ window.GALLERY_DATA=[
   {src:"gallery/c9.jpg",title:"DCA ",cat:"Certificates",note:"Add a favourite moment here"},
     {src:"gallery/isro.jpg",title:"Quiz",cat:"Certificates",note:"Add a favourite moment here"},
     {src:"gallery/iedc.jpg",title:"Volunteer",cat:"Certificates",note:"Add a favourite moment here"},
+      {src:"gallery/m9.png",title:"Volunteer",cat:"Moments",note:"Add a favourite moment here"},
+      {src:"gallery/m8.png",title:"Volunteer",cat:"Moments",note:"Add a favourite moment here"},
+      {src:"gallery/m7.png",title:"Volunteer",cat:"Certificates",note:"Add a favourite moment here"},
+      {src:"gallery/m5.jpg",title:"Volunteer",cat:"Moments",note:"Add a favourite moment here"},
+      {src:"gallery/m3.webp",title:"Volunteer",cat:"Moments",note:"Add a favourite moment here"},
+      {src:"gallery/m4.jpg",title:"Volunteer",cat:"Moments",note:"Add a favourite moment here"},
+      {src:"gallery/v2.jpg",title:"Volunteer",cat:"Volunteering",note:"Add a favourite moment here"},
+      {src:"gallery/c15.png",title:"Volunteer",cat:"Certificates",note:"Add a favourite moment here"},
+      {src:"gallery/m2.jpg",title:"Volunteer",cat:"Certificates",note:"Add a favourite moment here"},
 
 
 
