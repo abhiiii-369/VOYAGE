@@ -7,7 +7,7 @@ window.GALLERY_DATA=[
 {src:"gallery/flutter.jpg",title:"Flutter Mobile App Development",cat:"Certificates",note:"Stem Robotics"},
 {src:"gallery/v1.png",title:"ISTE",cat:"Volunteering",note:"HISS AND TELL"},
 {src:"gallery/c2.png",title:"HACKTOPIA",cat:"Achievements",note:"Finalist"},
-  {src:"gallery/c31.png",title:"FOSS HACKATHON",cat:"Achievements",note:"First Prize"},
+  {src:"gallery/c31.jpg",title:"FOSS HACKATHON",cat:"Achievements",note:"First Prize"},
   {src:"gallery/c4.png",title:"GDGC",cat:"Certificates",note:"Add a favourite moment here"},
 
   {src:"gallery/c6.png",title:"Flutter Quiz",cat:"Certificates",note:"Add a favourite moment here"},
