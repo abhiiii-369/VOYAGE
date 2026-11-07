@@ -21,7 +21,7 @@ window.GALLERY_DATA=[
       {src:"gallery/m7.png",title:"NASA 2024",cat:"Moments",note:"New Connections"},
       {src:"gallery/m5.jpg",title:"NASA Hackathon 2025",cat:"Moments",note:"Signing Off"},
       {src:"gallery/m3.webp",title:"Volunteer",cat:"Moments",note:"HISS AND TELL"},
-      {src:"gallery/m1.JPG",title:"Volunteering",cat:"Volunteering",note:"ISTE Event"},
+      {src:"gallery/m1.png",title:"Volunteering",cat:"Volunteering",note:"ISTE Event"},
       {src:"gallery/v2.JPG",title:"ENIGMA",cat:"Volunteering",note:"Core Team"},
       {src:"gallery/c15.png",title:"ARCANE HACKATHON",cat:"Achievements",note:"Third Prize"},
       {src:"gallery/m2.jpg",title:"Tech Team",cat:"Volunteering",note:"Execom Member"},
