@@ -25,6 +25,7 @@ window.GALLERY_DATA=[
       {src:"gallery/v2.jpg",title:"Volunteer",cat:"Volunteering",note:"Add a favourite moment here"},
       {src:"gallery/c15.png",title:"Volunteer",cat:"Certificates",note:"Add a favourite moment here"},
       {src:"gallery/m2.jpg",title:"Volunteer",cat:"Certificates",note:"Add a favourite moment here"},
+     {src:"gallery/Abhinand A S.jpg",title:"Project Expo",cat:"Certificates",note:"Third Prize"},
 
 
 
