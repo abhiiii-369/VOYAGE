@@ -55,14 +55,12 @@ p{margin:10px 0;color:#cfd8f5}
 .ldb{width:220px;height:3px;background:var(--ln);margin:14px auto 0;overflow:hidden;border-radius:9px}.ldb i{display:block;height:100%;width:40%;background:var(--ac);box-shadow:0 0 12px var(--ac);animation:ldm 1.1s ease-in-out infinite}@keyframes ldm{0%{margin-left:-40%}100%{margin-left:100%}}
 #cd{position:fixed;inset:0;display:grid;place-items:center;pointer-events:none;z-index:7;font:700 clamp(90px,22vw,220px)/1 var(--sans);color:#fff;text-shadow:0 0 60px var(--ac),0 0 12px var(--ac);opacity:0}
 #cd.pop{animation:popn .95s ease-out forwards}@keyframes popn{0%{opacity:0;transform:scale(1.9)}22%{opacity:1;transform:scale(1)}78%{opacity:1}100%{opacity:0;transform:scale(.85)}}
-#toast{position:fixed;left:50%;bottom:calc(70px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);width:min(460px,calc(100vw - 28px));padding:14px 18px;border-radius:16px;background:var(--gl);backdrop-filter:blur(14px);border:1px solid var(--ac);z-index:6;opacity:0;pointer-events:none;transition:opacity .5s,transform .5s;font-size:14px}
+#toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);width:min(460px,calc(100vw - 28px));padding:14px 18px;border-radius:16px;background:var(--gl);backdrop-filter:blur(14px);border:1px solid var(--ac);z-index:6;opacity:0;pointer-events:none;transition:opacity .5s,transform .5s;font-size:14px}
 #toast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}#toast b{display:block;color:var(--ac);font:500 11px var(--mono);letter-spacing:.16em;margin-bottom:4px}
-#fh{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:5;display:none;font:500 11px var(--mono);letter-spacing:.12em;color:var(--mut);text-align:center;padding:9px 16px;border-radius:99px;background:var(--gl);border:1px solid var(--ln);backdrop-filter:blur(10px)}#fh.on{display:block}
 #sc2{position:fixed;top:calc(54px + env(safe-area-inset-top,0px));left:16px;z-index:5;display:none;font:500 12px var(--mono);letter-spacing:.12em;color:var(--wip)}#sc2.on{display:block}
 .gs{display:flex;gap:10px;margin:8px 0}.gs div{flex:1;padding:10px;border-radius:12px;border:1px solid var(--ln);text-align:center}.gs b{display:block;font-size:22px;color:var(--ac)}.gs span{font:400 11px var(--mono);color:var(--mut)}
 .gl{display:flex;align-items:center;gap:8px;font:400 12px var(--mono);margin:4px 0}.gl span{width:90px;color:#cfd8f5}.gl div{flex:1;height:6px;border-radius:9px;background:var(--ln);overflow:hidden}.gl i{display:block;height:100%;background:linear-gradient(90deg,var(--ac),#b98bff)}.gl em{width:36px;font-style:normal;color:var(--mut);text-align:right}
 .gr{display:block;padding:8px 12px;margin:6px 0;border:1px solid var(--ln);border-radius:12px;text-decoration:none;color:var(--fg)}.gr:hover{border-color:var(--ac)}.gr b{display:block;font-size:14px}.gr span{font:400 11px var(--mono);color:var(--mut)}
-@media (max-width:700px){#fh{white-space:normal;width:calc(100vw - 28px)}}
 .tabs{display:flex;gap:8px;margin:12px 0 4px;flex-wrap:wrap}.tb{padding:6px 14px;border-radius:99px;border:1px solid var(--ln);background:none;color:var(--mut);font:500 12px var(--mono);letter-spacing:.06em;cursor:pointer}.tb.on{color:#04060d;background:var(--ac);border-color:var(--ac)}
 .tp{display:none}.tp.on{display:block}.tl{border-left:2px solid var(--ac);padding:2px 0 2px 14px;margin:10px 0}.tl b{display:block}.tl span{display:block;color:#cfd8f5;font-size:14px}.tl i{font:400 12px var(--mono);color:var(--mut);font-style:normal}
 .brand{display:block}.brand b{display:block;font:700 18px/1.15 var(--sans);letter-spacing:.01em;color:var(--fg)}.brand span{display:block;font:400 10px var(--mono);letter-spacing:.22em;color:var(--mut);margin-top:3px}
@@ -76,7 +74,6 @@ p{margin:10px 0;color:#cfd8f5}
 @keyframes ppa{0%{opacity:0;transform:translate(-50%,16px) scale(.8)}18%{opacity:1;transform:translate(-50%,0) scale(1.06)}70%{opacity:1}100%{opacity:0;transform:translate(-50%,-24px)}}
 #fx{position:fixed;inset:0;background:radial-gradient(circle,rgba(190,225,255,.65),rgba(255,255,255,.12));opacity:0;pointer-events:none;z-index:8}#fx.on{animation:fxa .7s ease-out}@keyframes fxa{0%{opacity:.9}100%{opacity:0}}
 #ar{position:fixed;left:0;top:0;z-index:5;display:none;pointer-events:none;font:700 18px var(--mono);color:#ffd24a;text-shadow:0 0 12px rgba(255,210,74,.9)}
-#bst{position:fixed;right:16px;bottom:calc(64px + env(safe-area-inset-bottom,0px));z-index:6;display:none;padding:16px 20px}
 #sc2{position:fixed;top:74px;left:16px;z-index:5;display:none;font:500 12px/1.55 var(--mono);letter-spacing:.1em;color:var(--wip);white-space:pre}#sc2.on{display:block}
 #gal{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;padding:calc(14px + env(safe-area-inset-top,0px)) 16px calc(14px + env(safe-area-inset-bottom,0px));background:radial-gradient(ellipse at 50% 35%,rgba(16,26,60,.93),rgba(2,3,10,.98));backdrop-filter:blur(10px);opacity:0;pointer-events:none;transition:opacity .5s}
 #gal.open{opacity:1;pointer-events:auto}
@@ -110,6 +107,11 @@ p{margin:10px 0;color:#cfd8f5}
 .glc img{box-shadow:0 0 70px color-mix(in srgb,var(--ac) 38%,transparent)}
 .gw.mv{transition:left .6s cubic-bezier(.2,.8,.2,1),top .6s cubic-bezier(.2,.8,.2,1),width .6s cubic-bezier(.2,.8,.2,1),height .6s cubic-bezier(.2,.8,.2,1)}
 .gw.hero{border-color:#fff;box-shadow:0 0 46px var(--ac)}
+#fbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:5;display:none;align-items:center;justify-content:center;gap:10px;pointer-events:none}#fbar.on{display:flex}
+#fh{pointer-events:auto;font:500 11px/1.4 var(--mono);letter-spacing:.1em;color:var(--mut);text-align:center;padding:9px 16px;border-radius:99px;background:var(--gl);border:1px solid var(--ln);backdrop-filter:blur(10px)}
+#bst{pointer-events:auto;display:none;flex:0 0 auto;margin:0;padding:14px 20px;touch-action:none;user-select:none}
+.gw.hero{z-index:5}
+@media (max-width:700px){#fh{flex:1;border-radius:14px;padding:8px 12px;font-size:10px;letter-spacing:.06em}}
 @media (max-width:980px){.top .nav .btn.ai,.top .nav .btn.p{padding:8px 13px}.pill{display:none;position:absolute;top:calc(100% + 8px);right:0;flex-direction:column;align-items:stretch;border-radius:16px;padding:6px;min-width:176px}.pill.open{display:flex}.pill .btn{text-align:left;padding:11px 14px}#bm{display:inline-block}}
 .dock{display:flex;flex-direction:column;overflow:hidden;max-height:min(50vh,460px)}
 .dock .bd{overflow-y:auto;min-height:0;flex:1 1 auto;padding-right:2px;-webkit-overflow-scrolling:touch}
@@ -133,7 +135,7 @@ p{margin:10px 0;color:#cfd8f5}
 <div class="top ui"><div class="brand"><b>Abhinand A S</b><span>SOFTWARE DEVELOPER</span></div><div class="nav"><div class="pill" id="nl"><button class="btn" id="bo">Overview</button><button class="btn" id="bq">Education</button><button class="btn" id="bg">Gallery</button><button class="btn" id="bf">🕹 Free Flight</button><button class="btn" id="bc">Contact</button><button class="btn ic" id="bs" title="Music on/off">🔊</button></div><button class="btn ai pulse" id="ba">✦ Crew</button><a class="btn p" target="_blank" rel="noopener" href="https://www.abhinand.live/ABHINAND%20A%20S%20FINAL.pdf">Resume</a><button class="btn ic" id="bm" aria-label="Menu">☰</button></div></div>
 <div class="intro ui" id="intro"><div class="lb">// HELLO, WORLD</div><h1>I’m Abhinand A S</h1><div class="sub">SOFTWARE DEVELOPER</div><p>Six planets, six projects, one mission. Your spaceship is parked at the launch pad. Ready to explore?</p><div class="row"><button class="btn p" onclick="launch()">Start Journey 🚀</button></div><div class="sub ih">🎧 BEST WITH SOUND ON</div></div>
 <div class="dock ui" id="dock"></div>
-<div id="cd"></div><div id="toast" class="ui"></div><div id="fh" class="ui"></div><div id="sc2"></div><div id="pp"></div><div id="fx"></div><div id="ar"></div><button class="btn p ui" id="bst">BOOST</button>
+<div id="cd"></div><div id="toast" class="ui"></div><div id="sc2"></div><div id="pp"></div><div id="fx"></div><div id="ar"></div><div id="fbar" class="ui"><div id="fh"></div><button class="btn p" id="bst">BOOST</button></div>
 <div id="gal" class="ui"><div class="gh"><div><div class="lb">// MISSION ARCHIVE</div><h2>Gallery</h2></div><button class="btn ic" id="gx" aria-label="Close gallery">✕</button></div><div class="gf" id="gf"></div><div class="gst" id="gst"><div class="gring" id="gring"></div></div><div id="gsc"></div><div class="gtm" id="gtm"><div id="glog"></div><button class="btn" id="grs">↻ Re-scan</button></div><div class="gnav"><button class="btn ic" id="gp" aria-label="Previous">◀</button><div class="gcap" id="gcap"></div><button class="btn ic" id="gnx" aria-label="Next">▶</button></div><div id="glb"><div id="glbc"></div></div></div>
 <div id="ld"><div><div class="lb">// INITIALIZING FLIGHT SYSTEMS</div><div class="ldb"><i></i></div></div></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -386,7 +388,7 @@ mines.forEach((m,i)=>{if(!m.got){m.m.rotation.y=t*1.4+i;m.m.rotation.x=t*.9;m.m.
 const ar=document.getElementById("ar"),tgt=rings[run.ri];if(!tgt){ar.style.display="none";return}
 v3.copy(tgt.p).project(cam);let x=v3.x,y=v3.y;const behind=v3.z>1;if(behind){x=-x;y=-y}const off=behind||Math.abs(x)>.88||Math.abs(y)>.8;if(off){const k=Math.max(Math.abs(x)/.88,Math.abs(y)/.8)||1;x/=k;y/=k}
 ar.style.display="block";ar.style.transform=`translate(${(x*.5+.5)*W}px,${(-y*.5+.5)*H}px) translate(-50%,-50%) rotate(${off?Math.atan2(-y,x):0}rad)`;ar.textContent=off?"➤":"◎ "+(ship.position.distanceTo(tgt.p)|0)+"m"}
-function setFree(on){document.getElementById("fh").classList.toggle("on",on);hs.classList.toggle("on",on);document.getElementById("bf").textContent=on?"✕ Exit Flight":"🕹 Free Flight";document.getElementById("bst").style.display=on&&!fine?"block":"none";if(!on)document.getElementById("ar").style.display="none";document.getElementById("fh").textContent=fine?"MOVE YOUR MOUSE to steer · hold CLICK or SPACE to boost · ESC exit":"DRAG to steer · hold BOOST · tap Exit Flight to leave"}
+function setFree(on){document.getElementById("fbar").classList.toggle("on",on);hs.classList.toggle("on",on);document.getElementById("bf").textContent=on?"✕ Exit Flight":"🕹 Free Flight";document.getElementById("bst").style.display=on&&!fine?"block":"none";if(!on)document.getElementById("ar").style.display="none";document.getElementById("fh").textContent=fine?"MOVE YOUR MOUSE to steer · hold CLICK or SPACE to boost · ESC exit":"DRAG to steer · hold BOOST · tap Exit Flight to leave"}
 function enterFree(){if(mode==="fly"||launching)return;started=1;curEl.classList.add("ret");dock.classList.remove("show");intro.classList.add("hide");chat.classList.remove("open");audioStart();fx();resetRun();ship.position.set(0,2.5,12);ff.tx=0;ff.ty=2.5;ff.d.set(0,0,-1);ff.pd.copy(ff.d);ff.v=14;bank=0;cam.position.set(0,5.8,23);look.set(0,2.5,-6);mode="free";setFree(1);toast("<b>RING RUN</b>The ship flies forward by itself. Just move your mouse to steer. Fly through the rings, dodge the red mines and grab orbs for extra seconds. Hunt the 3 hidden signals for bonus points.",6500)}
 function exitFree(){if(mode!=="free")return;mode="ov";setFree(0)}
 function collect(s){if(s.got)return;s.got=1;s.o.visible=false;found++;run.score+=300;burst(s.o.position,0xffe08a,90);fx();chime();popup("★ "+s.h.replace(/^\S+\s/,"")+" +300");toast(`<b>${s.h} · ${found}/3</b>${s.m}`,7500)}
@@ -471,15 +473,24 @@ w.addEventListener("pointermove",e=>{if(sx==null)return;const dx=e.clientX-sx,dy
 w.addEventListener("pointerup",()=>{w.classList.remove("drag");if(sx!=null&&!mv)gWinTap(i);sx=null});
 w.addEventListener("pointercancel",()=>{sx=null;w.classList.remove("drag")});return w}
 let gh=0,gws=[],gGeo=null;
+function gLayout(n,SW,SH,H,mob){const rnd=Math.random,out=[];if(n<=0)return out;
+const hit=(a,b,m)=>a.x<b.x+b.w+m&&a.x+a.w+m>b.x&&a.y<b.y+b.h+m&&a.y+a.h+m>b.y;
+const Q=Math.max(1,SW*SH-(H.w+20)*(H.h+20))*.5/n;let w0=(-44+Math.sqrt(44*44+3*Q))/1.5;w0=Math.max(mob?78:96,Math.min(mob?118:200,w0));
+for(const s of[1,.92,.85,.78,.72,.66,.6,.55]){if(w0*s*.92<(mob?64:76))break;const placed=[];let ok=true;
+for(let i=0;i<n&&ok;i++){const w=w0*s*(.92+rnd()*.16),h=w*.75+44;let c=null;
+for(let t=0;t<150;t++){const r={x:6+rnd()*Math.max(1,SW-w-12),y:6+rnd()*Math.max(1,SH-h-12),w,h};if(hit(r,H,10)||placed.some(p=>hit(r,p,6)))continue;c=r;break}
+if(c)placed.push(c);else ok=false}
+if(ok)return placed}
+const w=mob?72:84,h=w*.75+44;
+for(let i=0;i<n;i++){let c=null;for(let t=0;t<200;t++){const r={x:6+rnd()*Math.max(1,SW-w-12),y:6+rnd()*Math.max(1,SH-h-12),w,h};if(!hit(r,H,10)){c=r;break}}out.push(c||{x:6,y:6,w,h})}
+return out}
 function gScatter(heroItem){gClear();glines=[];gws=[];const box=document.getElementById("gsc");box.innerHTML="";gl=GALLERY.filter(g=>g.cat===gcat);gn_=gl.length;gcards=[];gh=Math.max(0,gl.indexOf(heroItem));
-const r=box.getBoundingClientRect(),SW=r.width||600,SH=r.height||360,mob=SW<700,placed=[];gLog("> establishing secure link…");
+const r=box.getBoundingClientRect(),SW=r.width||600,SH=r.height||360,mob=SW<700;gLog("> establishing secure link…");
 if(!gn_){gLog("> no transmissions in this sector yet");return}
 gsT.push(setTimeout(()=>gLog("> decrypting "+gcat.toLowerCase()+"…"),350));
-let hw=Math.min(mob?220:420,SW*.8);if(hw*.75+44>SH-12)hw=(SH-12-44)/.75;const hh=hw*.75+44,hx=(SW-hw)/2,hy=Math.max(4,(SH-hh)/2);gGeo=[hx+"px",hy+"px",hw+"px",hh+"px"];placed.push({x:hx,y:hy,w:hw,h:hh});
-const sf=Math.max(.6,Math.min(1,1.35-gn_*.05)),order=[gh,...gl.map((_,i)=>i).filter(i=>i!==gh)];
-order.forEach((i,n)=>{const g=gl[i],hero=i===gh;let w=hw,h=hh,x=hx,y=hy,t=0;
-if(!hero){w=(mob?118:176)*sf*(.85+Math.random()*.4);h=w*.75+44;do{x=4+Math.random()*Math.max(1,SW-w-8);y=4+Math.random()*Math.max(1,SH-h-8);t++}while(t<60&&placed.some(p=>x<p.x+p.w-6&&x+w>p.x+6&&y<p.y+p.h-6&&y+h>p.y+6));placed.push({x,y,w,h})}
-const c=gWin(g,i);c.style.left=x+"px";c.style.top=y+"px";c.style.width=w+"px";c.style.height=h+"px";c.style.setProperty("--rot",(hero?0:(Math.random()-.5)*8)+"deg");if(hero)c.classList.add("hero");box.appendChild(c);gws[i]=c;
+let hw=Math.min(mob?200:420,SW*.8)*Math.max(.62,1-.06*Math.max(0,gn_-4));if(hw*.75+44>SH-12)hw=(SH-12-44)/.75;const hh=hw*.75+44,hx=(SW-hw)/2,hy=Math.max(4,(SH-hh)/2),H={x:hx,y:hy,w:hw,h:hh};gGeo=[hx+"px",hy+"px",hw+"px",hh+"px"];
+const order=[gh,...gl.map((_,i)=>i).filter(i=>i!==gh)],rects=gLayout(gn_-1,SW,SH,H,mob);
+order.forEach((i,n)=>{const g=gl[i],hero=i===gh,rc=hero?H:rects[n-1];const c=gWin(g,i);c.style.left=rc.x+"px";c.style.top=rc.y+"px";c.style.width=rc.w+"px";c.style.height=rc.h+"px";c.style.setProperty("--rot",(hero?0:(Math.random()-.5)*6)+"deg");if(hero)c.classList.add("hero");box.appendChild(c);gws[i]=c;
 gsT.push(setTimeout(()=>{c.classList.add("in");gLog("> received ["+(n+1)+"/"+gn_+"] "+(g.src||"no_signal").split("/").pop());if(n===gn_-1)gsT.push(setTimeout(()=>gLog("> transfer complete · tap the centre photo to enlarge · tap another to bring it to the centre · drag to move"),500))},n===0?700:900+n*320))})}
 function gWinTap(i){if(i===gh){gLight(i);return}const a=gws[i],b=gws[gh];if(!a||!b||!gGeo)return;
 const ga=[a.style.left,a.style.top,a.style.width,a.style.height];a.classList.add("mv");b.classList.add("mv");
